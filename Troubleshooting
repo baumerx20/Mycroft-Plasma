@@ -5,6 +5,9 @@ Troubleshooting Steps During Mycroft-Plasma Install
 Download and Install mycroft-core
 git clone https://github.com/MycroftAI/mycroft-core
 
+Download and install mycroft-gui
+
+Errors during mycroft-gui installation:
 
 CMake Warning at /usr/share/ECM/find-modules/FindKF5.cmake:74 (find_package):
   Could not find a configuration file for package "KF5I18n" that is
