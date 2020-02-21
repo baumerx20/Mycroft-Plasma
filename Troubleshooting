@@ -62,6 +62,36 @@ apt-add-repository http://archive.neon.kde.org/user
 # apt update
 # apt dist-upgrade
 
+----------------------------------------------------------------------------------------------------------------
+CMake Error at CMakeLists.txt:48 (find_package):
+  By not providing "FindQt5Multimedia.cmake" in CMAKE_MODULE_PATH this
+  project has asked CMake to find a package configuration file provided by
+  "Qt5Multimedia", but CMake did not find one.
+
+  Could not find a package configuration file provided by "Qt5Multimedia"
+  (requested version 5.9.0) with any of the following names:
+
+    Qt5MultimediaConfig.cmake
+    qt5multimedia-config.cmake
+
+  Add the installation prefix of "Qt5Multimedia" to CMAKE_PREFIX_PATH or set
+  "Qt5Multimedia_DIR" to a directory containing one of the above files.  If
+  "Qt5Multimedia" provides a separate development package or SDK, be sure it
+  has been installed.
+
+
+-- Configuring incomplete, errors occurred!
+See also "/home/orion/plasma-mycroft/build/mycroft-gui-prefix/src/mycroft-gui-build/CMakeFiles/CMakeOutput.log".
+CMakeFiles/mycroft-gui.dir/build.make:105: recipe for target 'mycroft-gui-prefix/src/mycroft-gui-stamp/mycroft-gui-configure' failed
+make[2]: *** [mycroft-gui-prefix/src/mycroft-gui-stamp/mycroft-gui-configure] Error 1
+CMakeFiles/Makefile2:259: recipe for target 'CMakeFiles/mycroft-gui.dir/all' failed
+make[1]: *** [CMakeFiles/mycroft-gui.dir/all] Error 2
+Makefile:140: recipe for target 'all' failed
+make: *** [all] Error 2
+
+sudo apt-get install qtmultimedia5-dev
+
+
 
 
 
